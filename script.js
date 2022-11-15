@@ -49,11 +49,12 @@ video.addEventListener('play', () => {
 })
 
 function loadLabeledImages() {
-  const labels = ['Luca Lanzendorfer', 'Francois Costa', 'Christian Braun', 'Urs Frick', 'Laura Toedli']
+  const labels = ['Person 1','Person 2']
+  const NB_IMAGES = 2
   return Promise.all(
     labels.map(async label => {
       const descriptions = []
-      for (let i = 1; i <= 2; i++) {
+      for (let i = 1; i <= NB_IMAGES; i++) {
         const img = await faceapi.fetchImage(`labeled_images/${label}/${i}.jpg`)
         const detections = await faceapi.detectSingleFace(img).withFaceLandmarks().withFaceDescriptor()
         descriptions.push(detections.descriptor)
