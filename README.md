@@ -3,7 +3,7 @@
 
 <div align="center">
 
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?logo=javascript&logoColor=%23F7DF1E)
 [![Open Source Love](https://badges.frapsoft.com/os/v1/open-source.png?v=103)](https://github.com/ellerbrock/open-source-badges/)
 ![Edge](https://img.shields.io/badge/Edge-0078D7)
 ![Firefox](https://img.shields.io/badge/Firefox-FF7139)
