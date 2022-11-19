@@ -28,8 +28,6 @@ video.addEventListener('play', () => {
   const displaySize = { width: video.width, height: video.height }
   faceapi.matchDimensions(canvas, displaySize)
 
-  faceMatcher = loadLabeledImages();
-
   setInterval(async () => {
     let detection = await faceapi.detectAllFaces(video, new faceapi.TinyFaceDetectorOptions({ inputSize: 224, scoreThreshold: 0.5 })).withFaceLandmarks().withFaceDescriptors().withFaceExpressions();
     const resizedDetections = faceapi.resizeResults(detection, displaySize)
