@@ -22,6 +22,13 @@ This is a small proof of concept to test how we can integrate face detection in 
 
 </div>
 
+
+## How to run the code
+
+``` bash
+python -m http.server 8000
+```
+
 ## Live demonstration
 
 TODO: ADD GIF HERE
